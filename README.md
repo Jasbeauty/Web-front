@@ -13,3 +13,5 @@
  * [廖雪峰的官方网站：JavaScript教程](http://www.liaoxuefeng.com)  
  * [百度前端技术学院2015](https://github.com/baidu-ife/ife)  
  * [百度前端技术学院2016](http://ife.baidu.com/task/all)
+* jQuery
+ * [jQuery uncompressed version](https://code.jquery.com/jquery-3.0.0.js)
