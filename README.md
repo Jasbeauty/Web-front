@@ -15,6 +15,7 @@
  * [百度前端技术学院2016](http://ife.baidu.com/task/all)
 * jQuery  
  * [廖雪峰的官方网站：JavaScript教程中jQuery](http://www.liaoxuefeng.com)
+ * [UNDERSCORE.js](http://underscorejs.org)
 > 引用链接：[jQuery uncompressed version](https://code.jquery.com/jquery-3.0.0.js)  
 引用方式：
   
