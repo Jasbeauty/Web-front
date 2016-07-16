@@ -51,9 +51,10 @@
             </head>
 
  * [廖雪峰的官方网站：JavaScript教程中jQuery](http://www.liaoxuefeng.com)
- * [UNDERSCORE.js](http://underscorejs.org)
- * [Node.js](https://nodejs.org/en/)  
- > atom配置Node.js：
+ * [UNDERSCORE.js](http://underscorejs.org)  
+
+* [Node.js](https://nodejs.org/en/)  
+> atom配置Node.js：
 
             wenjiadeMacBook-Pro:~ wenjiasun$ cd ~/.atom/packages  
             wenjiadeMacBook-Pro:packages wenjiasun$ git clone git@github.com:tststs/atom-ternjs.git  
@@ -65,4 +66,10 @@
             Checking connectivity... done.  
             wenjiadeMacBook-Pro:packages wenjiasun$ cd atom-ternjs  
             wenjiadeMacBook-Pro:atom-ternjs wenjiasun$ npm install  
-            ⸨   ░░░░░░░░░░░░░░░⸩ ⠇ cloneCurrentTree: sill cloneCurrentTree Finishing  
+            ⸨   ░░░░░░░░░░░░░░░⸩ ⠇ cloneCurrentTree: sill cloneCurrentTree Finishing 
+ 
+ * crypto     
+ 
+ > crypto模块的目的是为了提供通用的加密和哈希算法  
+ * [crypto - 廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434501504929883d11d84a1541c6907eefd792c0da51000)
+ * [crypto常用算法](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/crypto)
