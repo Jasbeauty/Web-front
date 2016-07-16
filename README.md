@@ -35,7 +35,11 @@
 > * [Responsive Website Development and Design 专项课程](https://www.coursera.org/specializations/website-development)
  * ...
 
-> * [A developer's guide to the Internet of Things (python & javascript) IBM](https://www.coursera.org/learn/developer-iot/home/welcome)
+> * [A developer's guide to the Internet of Things (python & javascript) IBM](https://www.coursera.org/learn/developer-iot/home/welcome) 
+ * ...
+
+> * [Game Design and Development 专项课程](https://www.coursera.org/specializations/game-development)
+ * ...
 
 * jQuery  
 > 引用链接：[jQuery uncompressed version](https://code.jquery.com/jquery-3.0.0.js)  
