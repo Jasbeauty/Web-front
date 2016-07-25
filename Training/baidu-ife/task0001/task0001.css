@@ -14,6 +14,8 @@
 .h2{
   font-size: 24px;
   font-weight: bolder;
+  font-family: 'scriptin';
+  letter-spacing: 3px;
 }
 .p{
   font-size: 20px;
@@ -23,10 +25,45 @@
   text-transform: capitalize;
   text-decoration: none;
   word-spacing: normal;
-  white-space: pre;
+  white-space: normal;
   line-height: normal;
+  font-family: 'scriptin';
+  letter-spacing: 3px;
 
 }
 .img{
   border: medium double #f26363;
+}
+.div{
+  background-color: #f21954;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  /*使div居中的话，可以在设置width后，设定margin-left,margin-right都为auto；或者
+  设置margin=0 auto*/
+}
+#box{
+  width: 960px;
+  background-color: #f21954;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+}
+.div1{
+  width: 960px;
+  position: absolute;
+  left: 50%;
+}
+#box1{
+  background-color: #f21954;
+  position: relative;
+  left: -50%;
+}
+.div2{
+  -webkit-border-radius: 10px;  /*for safari and chrome*/
+  border-radius: 10px;
+  background-color: black;
+  width: 100px;
+  color: white;
+  text-align: center;
 }
