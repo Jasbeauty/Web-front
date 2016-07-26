@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2f2f;
+    color: #2c2f2f;
+    font: 1em Helvetica, sans-serif;
+}
+
+canvas {
+	/* without 'display' the scrollbars will appear when setting width/height using window.innerHeight */
+	display: block;
+
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 1em;
+	left: 10%;
+
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+}
