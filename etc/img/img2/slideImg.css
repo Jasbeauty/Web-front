@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background: #242c38;
+  font-family:
+  font-size:
+}
+a{
+  color:
+}
+/*a 表示所有状态下的链接的css*/
+.slider-container{
+  margin: 0 auto;
+  width: 960px;
+}
+.slider-wrapper{
+  position: relative;
+  z-index: 90;  /*图片底部的阴影*/
+  height: 400px;
+  width: 100%;
+  border: 5px solid black;
+  overflow: hidden; /*hidden: 内容会被修剪，并且其余内容是不可见的。*/
+}
+.slider-wrapper li{
+  display: none; /*none: 这样图片可以幻灯片播放*/
+}
+li.slide-current{
+  display: block; /*block: 显示为块级元素，这样第一张幻灯片一开始就能够显示*/
+}
+.slider-wrapper li img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
