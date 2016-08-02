@@ -1,0 +1,14 @@
+#button{
+  background-color: ivory;
+  color: black;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 0 3px black;
+  padding: 4px;
+  margin: 2px;
+  box-shadow: -1px 1px 0 #6cd3f9;
+}
+#warning{
+  color: red;
+  font-size: 12px;
+}
