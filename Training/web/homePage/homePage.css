@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*公用*/
+.comWidth{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*topBar*/
+.topBar{
+  height: 31px;
+  background-color: #f7f7f7;
+}
