@@ -14,13 +14,19 @@ li{
 }
 input,select,textarea{
   outline: none;
+  border: none;
+  /*for IE6:
+  background: none
+  main.css中 .searchText里需要加入 line-height:35px\9  (css hack \9代表所有的IE浏览器)*/
 }
 textarea{
   resize: none;
 }
 a{
   text-decoration: none;
+  color: #656565;
 }
+
 /*清除浮动*/
 .clearfix:after{
   content: "";
@@ -29,4 +35,11 @@ a{
 }
 .clearfix{
   zoom: 1;
+}
+/*便于直接调用左右浮动的class值*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
 }
