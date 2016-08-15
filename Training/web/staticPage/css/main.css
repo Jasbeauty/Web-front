@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*公用*/
+.comWidth{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftArea{
+  float: left;
+}
+.rightArea{
+  float: right;
+}  /*.leftArea .rightArea 使文字上下左右居中*/
+
+/*topBar*/
+.topBar{
+  height: 31px;
+  background-color: #f7f7f7;
+  line-height: 31px;
+}
+.collection{
+  background: url(../img/icon/collection.jpg) left center no-repeat;
+  /*left center 分别指x,y轴的位置*/
+  padding-left: 29px;
+  font-weight: bold;
+}
+.topBar a:hover{
+  color: black;
+}
+
+/*logoBar*/
+.logoBar{
+  height: 86px;
+  background-color: black;
+}
+.logo{
+  padding-left: 41px;
+  padding-top: 3px;
+}
+/*search*/
+.searchBox{
+  width: 430px;
+  margin-top: 23px;
+  padding-left: 135px;
+}
+.searchText{
+  width: 340px;
+  height: 35px;
+  padding: 0 10px;
+  /*因为有了padding,所以原来360(430-70)px的width要变成350px,因为左右各填充5px共10px*/
+}
+.searchBtn{
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei","微软雅黑";
+  background-color: #4ab6d9;
+}
+/*shopCar*/
+.shopCar{
+  width: 145px;
+  height: 35px;
+  background-color: #4ab6d9;
+  margin-top: 23px;
+  font:14px/35px "Microsoft YaHei","微软雅黑";
+  color: black;
+  margin-right: 49px;
+  /*for IE6需要加上: display: inline*/
+}
+.shopText{
+  /*font-size: 14px;
+  font-family: "Microsoft YaHei","微软雅黑";
+  可以简写(35px是行高):
+  font:14px/35px "Microsoft YaHei","微软雅黑";*/
+  height: 100%;
+  width: 87px;
+  border-right: black solid 1px;
+  line-height: 35px;
+  background: url(../img/icon/shopCar.png) 0px center no-repeat;
+  /*0px center 分别指x,y轴的位置*/
+  text-indent: 40px;
+  /*text-indent 表示首行缩进*/
+}
+.shopNum{
+  width: 27px; /*56-29*/
+  height: 35px;
+  border-left: rgb(76, 157, 203) solid 1px;
+  /*font:14px/35px "Microsoft YaHei","微软雅黑";*/
+  background: url(../img/icon/shopNum.png) 33px center no-repeat;
+  text-align: right;
+  padding-right: 29px;
+}
+/*navBox*/
+.navBox{
+  height: 35px;
+  background-color: rgb(19, 19, 19);
+  color: rgb(168, 168, 168);
+}
+.shopClass{
+  width: 190px;
+  position: relative;
+}
+.shopClass h3{
+  text-align: center;
+  line-height: 35px;
+}
+.shopClass i{
+  width: 15px;
+  height: 7px;
+  overflow: hidden;
+  background: url(../img/icon/shopClass.png) left center no-repeat;
+  display: inline-block; /*因为给<i>标签强行设置了长、宽，所以要加上display: inline-block*/
+  margin-left: 11px;
+}
+.nav, .shopClass{
+  font-family: "Microsoft YaHei","微软雅黑";
+}
+.nav{
+  line-height: 35px;
+}
+.nav li{
+  float: left;
+}
+.nav a{
+  height: 35px;
+  display: inline-block;
+  padding: 0 35px;
+  color: rgb(168, 168, 168);
+}
+.nav .active{
+  background-color: rgb(69, 69, 69);  /*设置一个当前状态*/
+}
+/*商品弹出列表*/
+.shopClass_item .b{
+  /*font-family: "Microsoft YaHei","微软雅黑";
+  font-size: 14px;
+  font-weight: bold;*/
+  font: 14px/1 "Microsoft YaHei","微软雅黑";
+}
+.shopClass_show{
+  background-color: rgb(69, 69, 69);
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 100%;
+}
+.shopClass_item a{
+  color: rgb(168, 168, 168);
+}
+.shopClass_item{
+  padding: 14px 10px;
+  border-bottom: rgb(168, 168, 168) solid 1px;
+  border-top: rgb(190, 190, 190) solid 1px;
+  /*for IE6需要加上: line-height: 16px;*/
+}
+.shopClass_item dt{
+  height: 24px;
+  background: url(../img/icon/shopClass1.png) right center no-repeat;
+  /*for IE6需要加上: line-height: 1(该单位是 cm);
+  overflow: hidden;*/
+}
+.shopClass_item .aLink{
+  width: 48px;
+  height: 20px;
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+  line-height: 20px;
+  text-decoration: underline;
+}
+/*banner bar*/
+.banner{
+  margin-bottom: 45px;
+}
+.bannerBar{
+  /*width: 810px;
+  height: 326px;*/
+  float: right;
+  position: relative;
+  overflow: hidden;  /*为了使三张横幅能够滚动出现，先隐藏掉除当前横幅外的另两张图*/
+}
+.imgBox{
+  /*width: 2430px; */ /*每张图片width810px乘以3张图片＝2430px*/
+  /*height: 326px;*/
+  position: absolute;
+  /*绝对定位的position一定要赋予x,y轴的值*/
+  /*left: -810px;  显示第二张横幅*/
+  left: 0;  显示第一张横幅
+  top: 0;
+}
+.imgBox li{
+  float: left;
+}
+.imgBox img{
+  /*width: 810px;
+  height: 326px;*/
+  display: block;
+}
+.imgNum{
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  text-align: center;
+}
+.imgNum a{
+  width: 15px;
+  height: 5px;
+  overflow: hidden;
+  background-color: rgb(19, 19, 19);
+  display: inline-block;  /*因为<a>是内嵌元素，使其既能支持宽高，又能定在一行*/
+  margin: 0 2px;  /*3个方格之间的间距*/
+}
+.imgNum .active{
+  background-color: rgb(69, 69, 69);
+}
+/*.bannerBig{
+  width: 810px;
+  height: 326px;
+}              简写到下面img里了*/
+/*因为html中用到两次banner,为了省力，把两者不同的地方width提出来,分别写成 .bannerBig和 .bannerSm*/
+.bannerBig .imgBox{
+  width: 2430px;
+  height: 326px;
+}
+.bannerBig, .bannerBig img{
+  width: 810px;
+  height: 326px;
+}
+.bannerSm, .bannerSm img{
+  width: 190px;
+  height: 400px;
+}
+.bannerSm .imgBox{
+  width: 570px;
+  height: 400px;
+}
+/*shopTit*/
+.shopTit{
+  height: 44px;
+  font-family: "Microsoft YaHei","微软雅黑";
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.shopTit h3{
+  font-size: 24px;
+  float: left;
+  font-weight: normal;
+  padding-left: 15px;
+}
+.icon{
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: url(../img/icon/shopIcon.png) left top no-repeat;
+}
+.more{
+  float: right;
+  font-family: "宋体";
+}
+.more:hover{
+  text-decoration: underline;
+}
+/*.shopList*/
+.shopList{
+  margin-bottom: 15px;
+}
+.shopList .leftArea{
+  width: 190px;
+}
+.shopList .rightArea{
+  width: 808px;
+  border: rgb(69, 69, 69) solid 1px;
+  border-bottom: rgb(168, 168, 168) solid 3px;
+  height: 396px;  /*.bannerSm的height =400px,所以.shopList .rightArea的height=400减去border1px - border减去bottom3px =396px*/
+  overflow: hidden;
+}
+/*shopListTop*/
+.shopListTop{
+  /*因为宽度的原因的需要用margin-right调整，使四张图片并排显示*/
+  margin-right: -4px; /*(202+1)*4-808=-4*/
+}
+.shopItem{
+  width: 202px;
+  border-right: rgb(69, 69, 69) solid 1px;
+  height: 279px;
+  border-bottom: rgb(69, 69, 69) solid 1px;
+  text-align: center;
+  font-family: "Microsoft YaHei","微软雅黑";
+  float: left;
+}
+.shopImg{
+  height: 218px;
+}
+.shopImg img{
+  padding: 30px;
+  width: 120px;
+  height: 140px;
+  display: block;
+}
+.shopItem h3{
+  font-size: 16px;
+}
+.shopItem p{
+  color: rgb(128, 128, 128);
+  line-height: 21px;
+}
+/*shoplistSm*/
+.shopListSm{
+  margin-right: -4px;
+}
+.shopItemSm{
+  width: 202px;
+  border-right: rgb(69, 69, 69) solid 1px;
+  height: 116px;
+  float: left;
+}
+.shopItemSmImg{
+  width: 95px;
+  height: 95px;
+  text-align: center;
+  float: left;
+}
+.shopItemSmImg img{
+  width: 80px;
+  height: 62px;
+  padding-top: 30px;
+}
+.shopImgText{
+  padding-top: 28px;
+  width: 100px;   /*202-95*/
+  float: left;
+  font-family: "Microsoft YaHei","微软雅黑";
+}
+.shopImgText p{
+  color: rgb(128, 128, 128);
+  font-size: 10px;
+  font-weight: bold;
+}
+.shopImgText h3{
+  font-size: 12px;
+  line-height: 30px;  /*给一个行高来达到文字间的间隙*/
+}
+/*footer*/
+.footer{
+  text-align: center;
+  background-color: rgb(19, 19, 19);
+  color: rgb(168, 168, 168);
+  line-height: 24px;
+  padding: 30px 0;
+  font-family: "Microsoft YaHei","微软雅黑";
+  /* 不用margin-top: 25px的原因: 因为会和之前用过的margin-top产生重叠，间距改变就不会太明显了;
+  所以直接在html中加了一个div来设置相关的.space高度*/
+}
+.footer i{
+  font-style: normal;
+  margin: 0 5px;
+}
+.footer a{
+  color: rgb(168, 168, 168);
+}
+.footer a:hover{
+  color: rgb(128, 128, 128);
+}
+.web img{
+  margin: 0 12px;
+}
+.web{
+  padding-top: 15px;
+}
+.space{
+  height: 25px;
+}
