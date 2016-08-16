@@ -1,0 +1,57 @@
+.style{
+  animation: word 5s linear 1s forwards;
+  position: relative;
+  width: 70%;
+  top: 5px;
+  left: 20px;
+
+  color: black;
+  font-family: 'scriptin';
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 3px ivory;
+
+}
+@keyframes word {
+    100%{
+        color: ivory;
+        text-shadow: 3px 3px 3px black;
+    }
+}
+@font-face{
+  font-family: 'scriptin';
+  src:url('img/scriptin-webfont.woff')format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    animation: dark 5s linear 1s forwards;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+@keyframes dark {
+    0% {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+.img{
+  animation: img 2.5s linear 2.5s forwards;
+  width: 360px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 10%;
+}
+@keyframes img {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}
