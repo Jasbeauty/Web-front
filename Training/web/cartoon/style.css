@@ -1,0 +1,227 @@
+/*animation-name(规定需要绑定到选择器的keyframe名称)
+  animation-duration(规定完成动画所花费的时间)
+  animation-timing-function(定义动画的速度曲线)
+  animation-delay(规定在动画开始之前的延迟)
+  animation-iteration-count(规定动画应该播放的次数)
+  animation-direction(规定是否应该轮流反向播放动画)
+  animation-fill-mode(设置动画结束后的状态)
+*/
+
+/*sky*/
+.sky{
+  overflow: hidden;
+  height: 60px;
+}
+.skyBird img{
+  width: 100px;
+  height: 60px;
+}
+.skyBird{
+  position: relative;
+  animation: bird 17s linear 5s infinite backwards;
+}
+@keyframes bird {
+  0%{
+    left: -150px;
+  }
+  100%{
+    left: 2000px;
+  }
+}
+/*left road*/
+.roadLeft{
+  height: 150px;
+  border-bottom: 5px groove black;
+}
+.p1{
+  position: relative;
+  animation: p1 50s linear 3s infinite backwards;
+}
+.p2{
+  position: relative;
+  animation: p1 40s linear 0s infinite backwards;
+}
+.p1 img{
+  height: 80px;
+  width: 103px;
+}
+.p2 img{
+  height: 60px;
+  width: 83px;
+}
+@keyframes p1 {
+  0%{
+    left: -100px;
+  }
+  100%{
+    left: 2000px;
+  }
+}
+@keyframes p2 {
+  0%{
+    left: -100px;
+  }
+  100%{
+    left: 2000px;
+  }
+}
+/*middle road*/
+.dashedline{
+  height: 70px;
+  display: inline-block;
+}
+.dashedline{
+  border-bottom: 3px solid black;
+  width: 7%;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+
+.roadLeft1{
+  height: 60px;
+  border-bottom: 5px groove black;
+}
+
+.traffic-light {
+  display: inline-block;
+}
+
+.pillar {        /*柱子*/
+    width: 5px;
+    height: 25px;
+    background-color: #000000;
+    margin-left: 10px;
+}
+
+.black {
+    width: 25px;
+    height: 65px;
+    background-color: #000000;
+}
+
+.lights {
+    display: inline-block;
+}
+
+.light {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.red {
+    background-color: red;
+    animation: stop 5s linear 1s forwards;
+}
+.yellow {
+    background-color: grey;
+    animation: ready 2s linear 6s;
+}
+
+.green {
+    background-color: grey;
+    animation: go 1s linear 8s forwards;
+}
+
+
+
+@keyframes stop {
+    0%,40%,80%{
+        background-color: red;
+    }
+    20%,60%,100% {
+        background-color: grey;
+    }
+}
+
+@keyframes ready {
+    0% {
+        background-color: yellow;
+    }
+    90% {
+        background-color: yellow;
+    }
+}
+
+@keyframes go {
+    to {
+        background-color: #6eef7f;
+    }
+}
+.car{
+  position: relative;
+  animation: car 10s linear 9.5s infinite backwards;
+}
+
+
+
+@keyframes car {
+  0%{
+    left: -130px;
+  }
+  100%{
+    left: 2000px;
+  }
+}
+
+
+
+
+/*right road*/
+.p3{
+  position: relative;
+  animation: p3 15s linear 2s infinite backwards;
+}
+
+.p3 img{
+  height: 70px;
+  width: 93px;
+}
+
+@keyframes p3 {
+  0%{
+    left: -200px;
+  }
+  100%{
+    left: 2000px;
+  }
+}
+.p4{
+  position: relative;
+  animation: p4 35s linear 2s infinite backwards;
+}
+
+.p4 img{
+  height: 80px;
+  width: 83px;
+}
+
+@keyframes p4 {
+  100%{
+    left: -200px;
+  }
+  0%{
+    left: 2000px;
+  }
+}
+.p5{
+  position: relative;
+  animation: p5 45s linear 0s infinite backwards;
+}
+
+.p5 img{
+  height: 80px;
+  width: 153px;
+}
+
+@keyframes p5 {
+  100%{
+    left: -100px;
+  }
+  0%{
+    left: 1300px;
+  }
+}
