@@ -1,0 +1,100 @@
+/*参考文章：http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/
+*/
+
+body{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.box{
+  -webkit-perspective: 2000px;    /*perspective:透视度，又叫视距*/
+  -moz-perspective: 2000px;
+  -ms-perspective: 2000px;
+  -o-perspective: 2000px;
+  /*perspective: 2000px;  现浏览器都不支持*/
+}
+.container{
+  width: 228px;  /*中心旋转轴的宽度*/
+  height: 400px;
+  margin: 10% 0 0 40%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  animation: rotate 9s linear infinite;
+}
+@keyframes rotate {
+  0%{
+      transform: rotateY(0deg);  /*deg: degree*/
+  }
+  100%{
+      transform: rotateY(360deg);
+  }
+}
+.container img{
+  position: absolute;  /*为了不至于产生类似DNA的螺旋状效果，我们让所有图片position:absolute，公用同一个中心点*/
+  border-radius: 7%;
+  width: 228px;
+  height: 328px;
+}
+/*translateZ的功能就是让元素在自己的眼前或近或远, 帮我们寻找透视的位置*/
+.container img:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+    -webkit-transform: rotateY(0deg) translateZ(300px);
+    -moz-transform: rotateY(0deg) translateZ(300px);
+    -ms-transform: rotateY(0deg) translateZ(300px);
+    -o-transform: rotateY(0deg) translateZ(300px);
+}
+
+.container img:nth-child(2){
+    transform: rotateY(45deg) translateZ(300px);
+    -webkit-transform: rotateY(45deg) translateZ(300px);
+    -moz-transform: rotateY(45deg) translateZ(300px);
+    -ms-transform: rotateY(45deg) translateZ(300px);
+    -o-transform: rotateY(45deg) translateZ(300px);
+}
+
+.container img:nth-child(3){
+    transform: rotateY(90deg) translateZ(300px);
+    -webkit-transform: rotateY(90deg) translateZ(300px);
+    -moz-transform: rotateY(90deg) translateZ(300px);
+    -ms-transform: rotateY(90deg) translateZ(300px);
+    -o-transform: rotateY(90deg) translateZ(300px);
+}
+
+.container img:nth-child(4){
+    transform: rotateY(135deg) translateZ(300px);
+    -webkit-transform: rotateY(135deg) translateZ(300px);
+    -moz-transform: rotateY(135deg) translateZ(300px);
+    -ms-transform: rotateY(135deg) translateZ(300px);
+    -o-transform: rotateY(135deg) translateZ(300px);
+}
+.container img:nth-child(5) {
+    transform: rotateY(180deg) translateZ(300px);
+    -webkit-transform: rotateY(180deg) translateZ(300px);
+    -moz-transform: rotateY(180deg) translateZ(300px);
+    -ms-transform: rotateY(180deg) translateZ(300px);
+    -o-transform: rotateY(180deg) translateZ(300px);
+}
+.container img:nth-child(6) {
+    transform: rotateY(225deg) translateZ(300px);
+    -webkit-transform: rotateY(225deg) translateZ(300px);
+    -moz-transform: rotateY(225deg) translateZ(300px);
+    -ms-transform: rotateY(225deg) translateZ(300px);
+    -o-transform: rotateY(225deg) translateZ(300px);
+}
+.container img:nth-child(7) {
+    transform: rotateY(270deg) translateZ(300px);
+    -webkit-transform: rotateY(270deg) translateZ(300px);
+    -moz-transform: rotateY(270deg) translateZ(300px);
+    -ms-transform: rotateY(270deg) translateZ(300px);
+    -o-transform: rotateY(270deg) translateZ(300px);
+}
+.container img:nth-child(8) {
+    transform: rotateY(315deg) translateZ(300px);
+    -webkit-transform: rotateY(315deg) translateZ(300px);
+    -moz-transform: rotateY(315deg) translateZ(300px);
+    -ms-transform: rotateY315deg) translateZ(300px);
+    -o-transform: rotateY(315deg) translateZ(300px);
+}
