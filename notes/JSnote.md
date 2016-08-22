@@ -85,4 +85,13 @@
 * [JS的Math对象](http://www.w3school.com.cn/jsref/jsref_obj_math.asp)  
 * [JS的window对象](http://www.cnblogs.com/kissdodog/archive/2013/01/01/2841464.html)  
 
-* 
+* [JS的DOM操作](http://www.cnblogs.com/kissdodog/archive/2012/12/25/2833213.html)       
+  [JavaScript与DOM（上）-- 适用于新手](http://www.cnblogs.com/TomXu/archive/2012/02/16/2351331.html)  
+  [JavaScript与DOM（下）](http://www.cnblogs.com/TomXu/archive/2012/02/17/2351938.html)  
+  [JS正则表达式](http://www.cnblogs.com/rubylouvre/archive/2010/03/09/1681222.html)  
+  [正则表达式基本语法（上）](http://www.cnblogs.com/dolphinX/p/3486214.html)  
+  [正则表达式相关方法（下）](http://www.cnblogs.com/dolphinX/p/3486136.html)  
+  [正则表达式](http://wiki.hotoo.me/RegExp.html)
+
+#### 参考资料  
+[深入理解JavaScript系列](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html)  
