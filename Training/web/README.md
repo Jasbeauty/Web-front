@@ -3,7 +3,8 @@
 #### div + css 的盒子模型
 ![盒子模型](http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_1.jpeg)    
 * [margin](http://www.zhangxinxu.com/wordpress/2009/08/css-margin的相关属性，问题及应用/)  
-* padding  
+* padding    
+
 > [MARGIN和PADDING中四个值的先后顺序及区别](http://my.clicknow.cn/post/85/)  
 [使用CSS中margin和padding的基础和注意事项](http://blog.sina.com.cn/s/blog_673ee2b50100lxrb.html)
 
