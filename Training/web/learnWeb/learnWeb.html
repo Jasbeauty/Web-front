@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>learning</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="" id="mainbox">
+      <div class="" id="topbox">
+        <div class="" id="logo">
+          <div class="logo1">
+            <img src="img/logo.jpg" alt="" />
+          </div>
+          <div class="logofont">
+            <span class="logospan">网站制作练习</span>
+          </div>
+          <div class="">
+            <span class="phone">&#9742;联系电话:800-000-080</span>
+          </div>
+
+        </div>
+
+        <div class="" id="mainmenu">
+          <div class="" id="nav">
+            <ul>
+              <!--加span标签，使得字的背景颜色与字体等高-->
+              <li><span id="col"><a href="#">首页</a></span></li>
+              <li><span id="col"><a href="#">关于我们</a></span></li>
+              <li onmouseover="showobj('nav1')" onmouseout="hiddenobj('nav1')"><span id="col"><a href="#">新闻资讯</a></span></li>
+              <li><span id="col"><a href="#">产品介绍</a></span></li>
+              <li><span id="col"><a href="#">解决方案</a></span></li>
+              <li><span id="col"><a href="#">体验中心</a></span></li>
+              <li><span id="col"><a href="#">成功案例</a></span></li>
+              <li><span id="col"><a href="#">加盟合作</a></span></li>
+              <li><span id="col"><a href="#">资料下载</a></span></li>
+              <li><span id="col"><a href="#">联系我们</a></span></li>
+
+            </ul>
+          </div>
+          <!--以下二级菜单是通过div+css+js实现的-->
+          <div id="nav1" onmouseover="showobj('nav1')" onmouseout="hiddenobj('nav1')">
+            <ul>
+              <li><a href="#">公司新闻</a></li>
+              <li><a href="#">行业新闻</a></li>
+              <li><a href="#">国际新闻</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="" id="bannerbox">
+        <div class="">
+          <img src="img/1.jpg" alt="" id="banner1" />
+        </div>
+        <div class="" id="spanbtn">
+          <span onmouseover="showbannerbyId(1)" onmouseout="btnMouseOut()">1</span>
+          <span onmouseover="showbannerbyId(2)" onmouseout="btnMouseOut()">2</span>
+          <span onmouseover="showbannerbyId(3)" onmouseout="btnMouseOut()">3</span>
+          <span onmouseover="showbannerbyId(4)" onmouseout="btnMouseOut()">4</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

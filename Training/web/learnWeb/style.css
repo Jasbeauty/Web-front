@@ -1,0 +1,122 @@
+/*避免因不同浏览器造成的兼容性影响*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{
+  padding: 0;
+  margin: 0;
+}
+/*使用a标签的链接不出现下划线*/
+a{
+  text-decoration: none;
+  color: ivory;
+}
+/*整个页面布局*/
+#mainbox{
+  border: solid 1px red;
+  width: 1008px;
+  height: 1000px;
+  margin: 0 auto;  /*居中*/
+}
+body{
+  background: url(img/bg.jpg) no-repeat right 100%;
+}
+/*顶部logo部分*/
+#logo{
+  height: 95px;
+  position: relative;
+  padding: 10px;
+}
+.logo1{
+  width: 120px;
+  float: left;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+.logo1 img{
+  height: 80px;
+  width: 100px;
+}
+.logofont{
+  position: absolute;
+  bottom: 15px;
+  left: 172px;
+}
+.logospan{
+  font-size: 30px;
+  float: left;
+  width: 300px;
+  font-weight: bold;
+  height: 60px;
+  color: rgb(38, 38, 38);
+  font-family: 'Microsoft YaHei';
+}
+.phone{
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  font-size: 15px;
+  color: rgb(38, 38, 38);
+  width: 200px;
+  height: 60px;
+}
+/*主菜单*/
+#mainmenu{
+  position: relative;
+}
+#nav{
+  background-color: black;
+  line-height: 44px;
+}
+#nav ul{
+  list-style: none;  /*去掉项目符号*/
+}
+#nav ul li{       /*ul似乎可以去掉？？*/
+  display: inline-block;
+  font-family: 'Microsoft YaHei';
+  width: 80px;
+  text-align: center;
+  line-height: 44px;
+}
+#col{
+  background-color: rgb(38, 38, 38);
+}
+
+/*二级菜单*/
+#nav1{
+  position: absolute;
+  top: 44px;
+  left: 175px;
+  display: none;  /*使其默认为隐藏状态*/
+}
+#nav1 ul{
+  list-style: none;
+}
+#nav1 ul li{
+  width: 80px;
+  height: 35px;
+  color: ivory;
+  font-family: 'Microsoft YaHei';
+  background-color: rgb(38, 38, 38);
+  text-align: center;
+  font-size: 15px;
+}
+/*banner*/
+#bannerbox{
+  position: relative;
+}
+#banner1{
+  width: 1008px;
+  height: 370px;
+}
+#spanbtn{
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+#spanbtn span{
+  border: 3px ivory solid;
+  margin-right: 5px;
+  padding: 5px;
+  font-family: 'Microsoft YaHei';
+  background-color: black;
+  color: ivory;
+}
