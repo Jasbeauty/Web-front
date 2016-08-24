@@ -86,6 +86,7 @@ body{
   top: 44px;
   left: 175px;
   display: none;  /*使其默认为隐藏状态*/
+  z-index: 1000;  /*防止二级菜单被banner部分覆盖掉*/
 }
 #nav1 ul{
   list-style: none;
@@ -119,4 +120,95 @@ body{
   font-family: 'Microsoft YaHei';
   background-color: black;
   color: ivory;
+}
+/*middlebox*/
+#midtop{
+  background-color: black;
+  height: 360px;
+}
+.topleft{
+  background: url(img/topleft.jpg) repeat-x;
+  height: 336px;
+  width: 270px;
+  float: left;
+  border: solid 1px ivory;
+  margin: 8px;
+}
+.titlecontent{
+  background: url(img/plus.png) no-repeat left center;
+  text-indent: 50px;  /*文本首行缩进距离*/
+  margin-left: 5px;
+}
+.topleft span{
+  font-size: 16px;
+  color: ivory;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  line-height: 45px;
+}
+#newsimg{
+  margin: 0 auto;
+  width: 200px;
+  /*这里的width要和下面img的像素相同，这样才能用margin方法使图片居中*/
+}
+#newsimg img{
+  width: 200px;
+  height: 150px;
+}
+.toplist ul{
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.toplist ul li{
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: bold;
+  color: ivory;
+  line-height: 30px;
+  background: url(img/rightarrow.png) no-repeat left center;
+  text-indent: 50px;
+  border-bottom: ivory 1px dotted;
+  width: 80%;
+}
+#companybox{
+  width: 400px;
+}
+#companyimg{
+  margin: 0 auto;
+  width: 330px;
+}
+#companyimg img{
+  width: 330px;
+  height: 150px;
+}
+#info{
+  margin-top: 20px;
+  text-align: center;
+  text-indent: 10px;
+}
+#info span{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+#contactimg{
+  margin: 0 auto;
+  width: 200px;
+}
+#contactimg img{
+  width: 200px;
+  height: 120px;
+}
+.toplist1 ul{
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.toplist1 ul li{
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: bold;
+  color: ivory;
+  line-height: 30px;
 }
