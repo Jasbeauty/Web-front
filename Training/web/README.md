@@ -3,7 +3,9 @@
 #### div + css 的盒子模型
 ![盒子模型](http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_1.jpeg)    
 * [margin](http://www.zhangxinxu.com/wordpress/2009/08/css-margin的相关属性，问题及应用/)  
- > 使用 `margin: 0 auto;` 的时候，必须要给定一个宽度  
+
+> 使用 `margin: 0 auto;` 的时候，必须要给定一个宽度  
+
 * padding    
 
 > [MARGIN和PADDING中四个值的先后顺序及区别](http://my.clicknow.cn/post/85/)  
