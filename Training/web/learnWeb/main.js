@@ -35,3 +35,19 @@ function showbannerbyId(num){
 function btnMouseOut(){
   timer = setInterval(autoPlayer,2000);
 }
+
+//无缝广告滚动的实现
+var speed = 10;  //控制速度
+var tab = document.getElementById("demo");
+var tab1 = document.getElementById("demo1");
+var tab2 = document.getElementById("demo2");
+//👆取出三个容器
+tab2.innerHTML = tab1.innerHTML;
+function Marquee(){
+  if (tab2.offsetWidth - tab.scrollLeft <= 0) {
+    tab.scrollLeft - = tab1.offsetWidth;
+  }else {
+    tab.scrollLeft++;
+  }
+}
+var mymar = window.setInterval("Marquee()",speed);

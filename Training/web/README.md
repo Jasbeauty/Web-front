@@ -53,3 +53,13 @@
 添加flash插件播放代码  
 * div + css + js  
  * [setInterval()](http://www.jb51.net/shouce/htmldom/jb51.net.htmldom/htmldom/met_win_setinterval.asp.html)  
+ * ...
+
+#### 无缝滚动模块设计  
+* [marquee: 滚动标签](http://www.360doc.com/content/14/1210/17/9060464_431831883.shtml)  
+* div + css + js 进行界面设计  
+ * offsetWidth: 对象可视宽度  
+ * scrollLeft: 对象的滚动条距离  
+  设计原理: 利用scrollLeft不断累加的方式实现
+
+ > [补充参考](http://www.w3school.com.cn/xmldom/dom_htmlelement.asp)  

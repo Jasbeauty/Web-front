@@ -122,6 +122,7 @@ body{
   color: ivory;
 }
 /*middlebox*/
+/*midtop*/
 #midtop{
   background-color: black;
   height: 360px;
@@ -211,4 +212,30 @@ body{
   font-weight: bold;
   color: ivory;
   line-height: 30px;
+}
+/*midbottom*/
+#midbotleft{
+  height: 260px;
+}
+#midbotright{
+  width: 690px;
+}
+#demo{
+  width: 600px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+#indemo{
+  float: left;
+  width: 800%;
+}
+#demo1{
+  float: left;
+}
+#demo2{
+  float: left;
+}
+#demo1 img{
+  width: 80px;
+  height: 100px;
 }
