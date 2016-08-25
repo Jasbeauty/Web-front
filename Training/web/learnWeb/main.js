@@ -37,17 +37,24 @@ function btnMouseOut(){
 }
 
 //无缝广告滚动的实现
-var speed = 10;  //控制速度
-var tab = document.getElementById("demo");
-var tab1 = document.getElementById("demo1");
-var tab2 = document.getElementById("demo2");
+var speed = 10;   //控制速度
+var scroll_begin = document.getElementById("scroll_begin");
+var scroll_end = document.getElementById("scroll_end");
+var scroll_div = document.getElementById("scroll_div");
 //👆取出三个容器
-tab2.innerHTML = tab1.innerHTML;
+scroll_end.innerHTML = scroll_begin.innerHTML;
+
 function Marquee(){
-  if (tab2.offsetWidth - tab.scrollLeft <= 0) {
-    tab.scrollLeft - = tab1.offsetWidth;
-  }else {
-    tab.scrollLeft++;
-  }
+    if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
+        scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+    else {
+        scroll_div.scrollLeft++;
+    }
 }
-var mymar = window.setInterval("Marquee()",speed);
+var MyMar = setInterval(Marquee, speed);
+function function1(){
+    Mymar = clearInterval(MyMar);
+}
+function function2(){
+    MyMar = setInterval(Marquee, speed);
+}

@@ -219,23 +219,32 @@ body{
 }
 #midbotright{
   width: 690px;
+  height: 260px;
 }
-#demo{
+#scroll_div{
   width: 600px;
   overflow: hidden;
   margin: 10px auto;
+  height: 180px;
 }
-#indemo{
-  float: left;
+#scroll_begin{
   width: 800%;
 }
-#demo1{
-  float: left;
+#scroll_begin img{
+  width: 100px;
+  height: 120px;
 }
-#demo2{
-  float: left;
+#scroll_begin span{
+  display:inline-block;
+  width:100px;
+  text-align:center;
 }
-#demo1 img{
-  width: 80px;
-  height: 100px;
+#scroll_end img{
+  width: 100px;
+  height: 120px;
+}
+#scroll_end span{
+  display:inline-block;
+  width:100px;
+  text-align:center;
 }

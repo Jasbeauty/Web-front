@@ -4,7 +4,17 @@
 ![盒子模型](http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_1.jpeg)    
 * [margin](http://www.zhangxinxu.com/wordpress/2009/08/css-margin的相关属性，问题及应用/)  
 
-> 使用 `margin: 0 auto;` 的时候，必须要给定一个宽度  
+> * 使用 `margin: 0 auto;` 的时候，必须要给定一个宽度  
+* `span` 中的文字居中方法：    
+ 要想居中，首先得有宽度；  
+ 而span是inline，只给width是不起作用的；要想起作用，得先让span变成inline-block：  
+  ```ruby  
+  span{
+  display:inline-block;
+  width:100px;
+  text-align:center;
+  }  
+  ```
 
 * padding    
 
@@ -57,9 +67,19 @@
 
 #### 无缝滚动模块设计  
 * [marquee: 滚动标签](http://www.360doc.com/content/14/1210/17/9060464_431831883.shtml)  
-* div + css + js 进行界面设计  
+* [div + css + js 进行界面设计](http://xueshu.baidu.com/s?wd=paperuri%3A%28e0c9a39353f65a7eef122c199f4af607%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fwww.doc88.com%2Fp-9972307152205.html&ie=utf-8&sc_us=13252124571412439245)  
  * offsetWidth: 对象可视宽度  
  * scrollLeft: 对象的滚动条距离  
   设计原理: 利用scrollLeft不断累加的方式实现
 
  > [补充参考](http://www.w3school.com.cn/xmldom/dom_htmlelement.asp)  
+  [table相关属性](http://www.w3school.com.cn/tags/att_table_cellpadding.asp)  
+  [参考源码（图片无缝滚动＋鼠标悬停控制功能）](http://zhidao.baidu.com/link?url=qk-UksCD2Al2NjzxVb7V8wpZkL7PrucQ826uV2nBsi5R8mqe0WPuBozoaVrMBkiY7iTvhM5CewWlQ5BNbOUPzK)  
+  [参考源码（文字无缝滚动）](http://www.codefans.net/jscss/code/2759.shtml)  
+
+#### 视频添加  
+* [embed标签](http://www.w3school.com.cn/tags/tag_embed.asp)  
+> [尝试发现最新版本的safari不支持，需改用video标签](https://support.apple.com/zh-cn/HT205081)  
+* [video标签](http://www.jianshu.com/p/404d01b8e713)  
+* [video标签 属性](http://www.cnblogs.com/kiter/archive/2013/02/25/2932157.html)
+> [目前支持三种格式](http://www.runoob.com/tags/tag-video.html)
