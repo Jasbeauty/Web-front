@@ -58,3 +58,5 @@ function function1(){
 function function2(){
     MyMar = setInterval(Marquee, speed);
 }
+
+//实现浮动在线咨询广告的特效

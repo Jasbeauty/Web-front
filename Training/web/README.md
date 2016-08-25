@@ -82,4 +82,20 @@
 > [尝试发现最新版本的safari不支持，需改用video标签](https://support.apple.com/zh-cn/HT205081)  
 * [video标签](http://www.jianshu.com/p/404d01b8e713)  
 * [video标签 属性](http://www.cnblogs.com/kiter/archive/2013/02/25/2932157.html)
-> [目前支持三种格式](http://www.runoob.com/tags/tag-video.html)
+> [目前支持三种格式](http://www.runoob.com/tags/tag-video.html)  
+
+#### 在线咨询  
+* QQ聊天链接  
+前提必须装有QQ软件  
+
+```ruby
+href="http://wpa.qq.com/msgrd?V=1&amp;uin=你的QQ号&amp;Site=www.maiziedu.com&amp;Menu=yes"
+```
+
+```ruby  
+href="tencent://message/?uin=要链接的QQ号"   
+```  
+
+```ruby  
+href="tencent://message/?uin=要链接的QQ号&Site=&Menu=yes"  
+```

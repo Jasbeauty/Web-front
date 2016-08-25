@@ -18,6 +18,21 @@ a{
 body{
   background: url(img/bg.jpg) no-repeat right 100%;
 }
+
+/*在线咨询*/
+#consultbox{
+  width: 144px;
+  height: 144px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  z-index: 100;
+}
+#consultbox img{
+  width: 144px;
+  height: 144px;
+}
+
 /*顶部logo部分*/
 #logo{
   height: 95px;
@@ -201,18 +216,7 @@ body{
   width: 200px;
   height: 120px;
 }
-.toplist1 ul{
-  list-style: none;
-  margin-left: 20px;
-  margin-top: 5px;
-}
-.toplist1 ul li{
-  font-size: 14px;
-  font-family: "Microsoft YaHei";
-  font-weight: bold;
-  color: ivory;
-  line-height: 30px;
-}
+
 /*midbottom*/
 #midbotleft{
   height: 260px;
