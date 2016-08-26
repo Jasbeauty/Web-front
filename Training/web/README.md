@@ -1,7 +1,7 @@
 # 网站制作
 ### 网页基本框架的构建  
 #### div + css 的盒子模型
-![盒子模型](http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_1.jpeg)    
+![盒子模型](indeximg/boxmodel.jpeg)    
 * [margin](http://www.zhangxinxu.com/wordpress/2009/08/css-margin的相关属性，问题及应用/)  
 
 > * 使用 `margin: 0 auto;` 的时候，必须要给定一个宽度  
@@ -32,7 +32,7 @@
 
 ### 页面logo及菜单布局  
 > * 因格式需要，经常会用到的一段前端代码：    
-![常用代码](img/1.png)    
+![常用代码](indeximg/1.png)    
 * [css中font-family中文字体](http://www.cnblogs.com/mofish/archive/2012/12/06/2805617.html)  
 * [html css特殊字符表](http://blog.csdn.net/bluestarf/article/details/40652011)
 
