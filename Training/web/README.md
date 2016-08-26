@@ -88,8 +88,8 @@
 * [目前支持三种格式](http://www.runoob.com/tags/tag-video.html)  
 
 #### 在线咨询  
-* QQ聊天链接  
-前提必须装有QQ软件  
+* QQ链接代码  
+前提：必须装有QQ软件  
 
 ```ruby
 href="http://wpa.qq.com/msgrd?V=1&amp;uin=你的QQ号&amp;Site=www.maiziedu.com&amp;Menu=yes"
@@ -102,3 +102,35 @@ href="tencent://message/?uin=要链接的QQ号"
 ```ruby  
 href="tencent://message/?uin=要链接的QQ号&Site=&Menu=yes"  
 ```
+
+* 属性    
+ `document.body.scrollTop`  
+ `document.documentElement.scrollTop`
+
+* 设计原理  
+ * 固定图片在body中的位置：position: absolute  
+ * 动态获取滚动条的位置 ＋ 原来的位置高度：(document.body.scrollTop+)document.documentElement.scrollTop+图片原来定义的top值+"px"  
+ * 重新设置新的位置高度  
+ * 通过事件触发调用  
+
+ > ![scrollTop、offsetHeight和offsetTop等属性用法详解](indeximg/function.gif)  
+ [相关属性的详细介绍](http://blog.csdn.net/fswan/article/details/17238933)
+
+* 核心代码  
+```ruby  
+window.onload = window.onresize = window.onscroll = function(){
+  var qqbox = document.getElementById("consultbox");
+  var qq = document.getElementById("consult");
+  var sc_top = document.documentElement.scrollTop || document.body.scrollTop;  
+  setTimeout(function(){
+    clearInterval(qqbox.timer);
+    var itop = parseInt((document.documentElement.clientHeight - qqbox.offsetHeight)/2) + sc_top;
+    qqbox.timer = setInterval(function(){
+      var ispeed = (sc_top - qqbox.offsetTop) / 8;
+      ispeed = ispeed > 0 ? Math.ceil(ispeed) : Math.floor(ispeed);
+      qqbox.offsetTop == sc_top ? clearInterval(qqbox.timer) : (qqbox.style.top = qqbox.offsetTop + ispeed + "px");
+    },30)
+  },100)
+}  
+```
+[参考案例](http://js.alixixi.com/a/2011071572504.shtml#)

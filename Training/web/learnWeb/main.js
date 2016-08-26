@@ -59,4 +59,18 @@ function function2(){
     MyMar = setInterval(Marquee, speed);
 }
 
-//实现浮动在线咨询广告的特效
+//实现在线咨询广告的浮动特效
+window.onload = window.onresize = window.onscroll = function(){
+  var qqbox = document.getElementById("consultbox");
+  var qq = document.getElementById("consult");
+  var sc_top = document.documentElement.scrollTop || document.body.scrollTop;
+  setTimeout(function(){
+    clearInterval(qqbox.timer);
+    var itop = parseInt((document.documentElement.clientHeight - qqbox.offsetHeight)/2) + sc_top;
+    qqbox.timer = setInterval(function(){
+      var ispeed = (sc_top - qqbox.offsetTop) / 8;
+      ispeed = ispeed > 0 ? Math.ceil(ispeed) : Math.floor(ispeed);
+      qqbox.offsetTop == sc_top ? clearInterval(qqbox.timer) : (qqbox.style.top = qqbox.offsetTop + ispeed + "px");
+    },30)
+  },100)
+}
