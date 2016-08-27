@@ -15,7 +15,7 @@ a{
   margin: 0 auto;  /*居中，必须要先设定一个宽度*/
 }
 body{
-  background: url(img/bg.jpg) no-repeat 780px 115%;
+  background: url(../img/bg.jpg) no-repeat 780px 115%;
 }
 
 /*在线咨询*/
@@ -163,7 +163,7 @@ body{
   height: 360px;
 }
 .topleft{
-  background: url(img/topleft.jpg) repeat-x;
+  background: url(../img/topleft.jpg) repeat-x;
   height: 336px;
   width: 270px;
   float: left;
@@ -171,7 +171,7 @@ body{
   margin: 8px;
 }
 .titlecontent{
-  background: url(img/plus.png) no-repeat left center;
+  background: url(../img/plus.png) no-repeat left center;
   text-indent: 50px;  /*文本首行缩进距离*/
   margin-left: 5px;
 }
@@ -202,7 +202,7 @@ body{
   font-weight: bold;
   color: ivory;
   line-height: 30px;
-  background: url(img/rightarrow.png) no-repeat left center;
+  background: url(../img/rightarrow.png) no-repeat left center;
   text-indent: 50px;
   border-bottom: ivory 1px dotted;
   width: 80%;
@@ -282,7 +282,7 @@ body{
   font-size: 17px;
   text-align: center;
   line-height: 30px;
-  background: url(img/topleft.jpg) repeat-x;
+  background: url(../img/topleft.jpg) repeat-x;
   width: 968px;
   height: 80px;
   margin-top: 10px;
@@ -379,7 +379,7 @@ body{
 }
 #navbarimg{
   padding: 10px;
-  background: url(img/navbar.png) no-repeat center 0;
+  background: url(../img/navbar.png) no-repeat center 0;
   width: 710px;
   height: 30px;
   border-radius: 15px;
@@ -412,10 +412,36 @@ body{
   font-size: 17px;
   text-align: center;
   line-height: 30px;
-  background: url(img/topleft.jpg) repeat-x;
+  background: url(../img/topleft.jpg) repeat-x;
   width: 968px;
   height: 80px;
   margin-top: 80px;
   position: absolute;
   padding: 20px;
+}
+
+
+/*新闻列表newslist.html  css*/
+#newslist{
+  margin-top: 15px;
+}
+#newslist ul{
+  list-style: none;
+}
+#newslist ul li{
+  line-height: 20px;
+  position: relative;
+  list-style: inside;
+  height: 30px;
+}
+#newslist ul li a{
+  color: rgb(70, 137, 244);
+}
+#newslist ul li a:hover{
+  text-decoration: underline;
+}
+#newslist ul li span{
+  position: absolute;
+  right: 10px;
+  color: rgb(70, 137, 244);
 }

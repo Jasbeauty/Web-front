@@ -1,0 +1,15 @@
+.digg{
+  padding: 3px;
+  margin: 3px;
+  text-align: right;
+}
+.digg a{
+  border: black 1px solid;
+  padding: 5px;
+  margin: 2px;
+  color: black;
+}
+.digg a:hover{
+  border: rgb(70, 137, 244) 2px solid;
+  text-decoration: underline;
+}

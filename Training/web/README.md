@@ -134,3 +134,6 @@ window.onload = window.onresize = window.onscroll = function(){
 }  
 ```
 [参考案例](http://js.alixixi.com/a/2011071572504.shtml#)
+
+#### 分页符  
+[参考](http://www.html5tricks.com/tag/分页插件)
