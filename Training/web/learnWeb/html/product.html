@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <style media="screen" type="text/css">
+    .QQbox{
+      z-index: 99;
+      right: 0;
+      width: 144px;
+      height: 144px;
+      position: absolute;
+    }
+    #divMenu img{
+      width: 144px;
+      height: 144px;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="" id="mainbox">
+      <div class="QQbox" id="divQQbox">
+        <div class="" id="divMenu">
+          <a href="tencent://message/?uin=2043281367"><img src="../img/consult.jpg" alt="" /></a>
+        </div>
+      </div>
+      <script type="text/javascript">
+      window.onload = window.onresize = window.onscroll = function ()
+      {
+       var oBox = document.getElementById("divQQbox");
+       //var oLine = document.getElementById("divOnline");
+       var oMenu = document.getElementById("divMenu");
+       var iScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+       setTimeout(function ()
+       {
+        clearInterval(oBox.timer);
+        var iTop = parseInt((document.documentElement.clientHeight - oBox.offsetHeight)/2) + iScrollTop;
+        oBox.timer = setInterval(function ()
+        {
+         var iSpeed = (iTop - oBox.offsetTop) / 8;
+         iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+         oBox.offsetTop == iTop ? clearInterval(oBox.timer) : (oBox.style.top = oBox.offsetTop + iSpeed + "px");
+        }, 30)
+       }, 100)
+     }
+      </script>
+
+      <div class="" id="topbox">
+        <div class="" id="logo">
+          <div class="logo1">
+            <img src="../img/logo.jpg" alt="" />
+          </div>
+          <div class="logofont">
+            <span class="logospan">网站制作练习</span>
+          </div>
+          <div class="">
+            <span class="phone">&#9742;联系电话:800-000-080</span>
+          </div>
+          <div class="" id="setindex">
+            <ul>
+              <li><a href="#">设为首页</a></li>
+              <li>|</li>
+              <li><a href="#">联系我们</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="" id="mainmenu">
+          <div class="" id="nav">
+            <ul>
+              <!--加span标签，使得字的背景颜色与字体等高-->
+              <li><span id="col"><a href="#">首页</a></span></li>
+              <li><span id="col"><a href="#">关于我们</a></span></li>
+              <li onmouseover="showobj('nav1')" onmouseout="hiddenobj('nav1')"><span id="col"><a href="#">新闻资讯</a></span></li>
+              <li><span id="col"><a href="#">产品介绍</a></span></li>
+              <li><span id="col"><a href="#">解决方案</a></span></li>
+              <li><span id="col"><a href="#">体验中心</a></span></li>
+              <li><span id="col"><a href="#">成功案例</a></span></li>
+              <li><span id="col"><a href="#">加盟合作</a></span></li>
+              <li><span id="col"><a href="#">资料下载</a></span></li>
+              <li><span id="col"><a href="#">联系我们</a></span></li>
+
+            </ul>
+          </div>
+          <!--以下二级菜单是通过div+css+js实现的-->
+          <div id="nav1" onmouseover="showobj('nav1')" onmouseout="hiddenobj('nav1')">
+            <ul>
+              <li><a href="#">公司新闻</a></li>
+              <li><a href="#">行业新闻</a></li>
+              <li><a href="#">国际新闻</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="" id="bannerbox">
+        <div class="">
+          <img src="../img/1.jpg" alt="" id="banner1" />
+        </div>
+        <div class="" id="spanbtn">
+          <span onmouseover="showbannerbyId(1)" onmouseout="btnMouseOut()">1</span>
+          <span onmouseover="showbannerbyId(2)" onmouseout="btnMouseOut()">2</span>
+          <span onmouseover="showbannerbyId(3)" onmouseout="btnMouseOut()">3</span>
+          <span onmouseover="showbannerbyId(4)" onmouseout="btnMouseOut()">4</span>
+        </div>
+
+      </div>
+      <div class="" id="middlebox">
+        <div class="" id="prolistleft">
+          <div class="" id="box1">
+            <h1>企业导航</h1>
+            <ul>
+              <li><a href="#">公司简介</a></li>
+              <li><a href="#">服务流程</a></li>
+              <li><a href="#">服务承诺</a></li>
+              <li><a href="#">服务宗旨</a></li>
+            </ul>
+
+          </div>
+          <div class="" id="box2">
+            <h1>新闻动态</h1>
+            <ul>
+              <li><a href="http://www.yixieshi.com/49968.html">离开了马化腾，张小龙还能不能捣鼓出一个微信？</a></li>
+              <li><a href="http://www.yixieshi.com/30411.html">互联网大佬集体换口风，金融科技为何一夜走火？</a></li>
+              <li><a href="http://www.yixieshi.com/45276.html">为什么互联网公司招人越来越挑剔？你又该如何成为倍受青睐的那一个？</a></li>
+              <li><a href="http://tech.qq.com/a/20150526/011379.htm">科学家：看3D电影能让你的大脑更灵活</a></li>
+              <li><a href="http://news.qq.com/a/20160827/007665.htm">网络脱口秀：“秀”什么，怎么“秀”？</a></li>
+            </ul>
+
+          </div>
+          <div class="" id="box3">
+            <h1>产品分类</h1>
+            <ul>
+              <li><a href="#">金融类</a></li>
+              <li><a href="#">互联网类</a></li>
+              <li><a href="#">产品设计类</a></li>
+              <li><a href="#">技术研发类</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+        <div class="" id="prolistright">
+          <div class="" id="proimg">
+            <img src="../img/proimg.jpeg" alt="" />
+          </div>
+          <div class="" id="topcontent">
+            <div class="" id="navbarimg">
+              产品列表
+            </div>
+            <div class="" id="chanpin">
+              <ul>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../img/chanpin.jpeg" alt="" /></a>
+                  <br>
+                  <a href="#"><div id="word">Mac Pro</div></a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="bottombox1">
+        <div class="" id="btbox1">
+          <div class="">
+            地址：   电话：   邮箱：
+          </div>
+          <div class="">
+            CopyRight &copy; All right reserved ICP 备案号
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../main.js" charset="utf-8"></script>
+  </body>
+</html>

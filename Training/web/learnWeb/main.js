@@ -8,7 +8,7 @@ function hiddenobj(id){
 }
 
 //实例化一个数组，来保存banner图片的路径
-var arr = new Array("img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg");
+var arr = new Array("../img/1.jpg","../img/2.jpg","../img/3.jpg","../img/4.jpg");
 var count = 0;
 //切换图片的功能
 function autoPlayer(){

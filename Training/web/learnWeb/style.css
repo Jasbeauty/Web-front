@@ -10,13 +10,12 @@ a{
 }
 /*整个页面布局*/
 #mainbox{
-  border: solid 1px red;
   width: 1008px;
   height: 1000px;
-  margin: 0 auto;  /*居中*/
+  margin: 0 auto;  /*居中，必须要先设定一个宽度*/
 }
 body{
-  background: url(img/bg.jpg) no-repeat right 100%;
+  background: url(img/bg.jpg) no-repeat 780px 115%;
 }
 
 /*在线咨询*/
@@ -68,13 +67,32 @@ body{
 }
 .phone{
   position: absolute;
-  bottom: 15px;
-  right: 0px;
+  bottom: 5px;
+  right: -20px;
   font-size: 15px;
   color: rgb(38, 38, 38);
   width: 200px;
   height: 60px;
 }
+#setindex{
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  right: -20px;    /*相对父容器30px*/
+  top: 10px;
+}
+#setindex ul{
+  list-style: none;
+}
+#setindex ul li{
+  display: inline;
+}
+#setindex ul li a{
+  color: rgb(241, 214, 34);
+  font-weight: bold;
+  font-size: 17px;
+}
+
 /*主菜单*/
 #mainmenu{
   position: relative;
@@ -253,4 +271,151 @@ body{
   display:inline-block;
   width:100px;
   text-align:center;
+}
+
+/*bottom box*/
+.bottombox{
+  position: relative;
+  clear: both;     /*Attention!!!*/
+}
+#btbox{
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+  background: url(img/topleft.jpg) repeat-x;
+  width: 968px;
+  height: 80px;
+  margin-top: 10px;
+  position: absolute;
+  padding: 20px;
+}
+
+
+
+/*产品.html css*/
+#prolistleft{
+  width: 250px;
+
+  float: left;
+
+}
+#prolistright{
+  width: 730px;
+
+  float: left;
+
+  margin-left: 20px;
+}
+#box1 h1{
+  background-color: rgb(235, 88, 159);
+  height: 35px;
+  line-height: 35px;  /*使文字上下居中*/
+  font-size: 20px;
+  text-indent: 20px;
+  border-bottom: ivory 5px solid;
+}
+#box1 ul{
+  list-style: none;
+}
+#box1 ul li{
+  background-color: rgb(194, 230, 245);
+  line-height: 35px;
+  border-bottom: ivory 3px solid;
+  text-indent: 20px;
+}
+#box1 ul li a{
+  color: black;
+}
+#box2 h1{
+  background-color: rgb(206, 218, 46);
+  height: 35px;
+  line-height: 35px;  /*使文字上下居中*/
+  font-size: 20px;
+  text-indent: 20px;
+  border-bottom: ivory 5px solid;
+}
+#box2 ul{
+  list-style: none;
+}
+#box2 ul li{
+  background-color: rgb(124, 99, 166);
+  line-height: 20px;
+  border-bottom: ivory 3px solid;
+  text-indent: 20px;
+  font-size: 12px;
+  color: ivory;
+  list-style: inside;  /*列表符号*/
+}
+
+#box3 h1{
+  background-color: rgb(197, 71, 147);
+  height: 35px;
+  line-height: 35px;  /*使文字上下居中*/
+  font-size: 20px;
+  text-indent: 20px;
+  border-bottom: ivory 5px solid;
+}
+#box3 ul{
+  list-style: none;
+}
+#box3 ul li{
+  background-color: rgb(255, 240, 53);
+  line-height: 35px;
+  border-bottom: ivory 3px solid;
+  text-indent: 20px;
+}
+#box3 ul li a{
+  color: black;
+}
+
+#proimg img{
+  width: 710px;
+  height: 130px;
+  border-radius: 15px;
+}
+#proimg{
+  padding: 10px;
+  border-bottom: 3px dotted rgb(67, 131, 233);
+}
+#navbarimg{
+  padding: 10px;
+  background: url(img/navbar.png) no-repeat center 0;
+  width: 710px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 30px;
+  text-indent: 15px;
+  color: ivory;
+}
+
+#chanpin ul{
+  list-style: none;
+  width: 740px;
+}
+#chanpin ul li{
+  display: inline-block;   /*需定义一个宽度，使其块状显示*/
+}
+#chanpin ul li img{
+  width: 240px;
+  height: 180px;
+}
+#word{
+  color: rgb(237, 204, 200);
+  text-align: center;
+  font-weight: bold;
+}
+.bottombox1{
+  position: relative;
+  clear: both;
+}
+#btbox1{
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+  background: url(img/topleft.jpg) repeat-x;
+  width: 968px;
+  height: 80px;
+  margin-top: 80px;
+  position: absolute;
+  padding: 20px;
 }
