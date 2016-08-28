@@ -445,3 +445,82 @@ body{
   right: 10px;
   color: rgb(70, 137, 244);
 }
+
+
+/*newsdetail.html新闻详细页面   css*/
+#h2{
+  text-align: center;
+  line-height: 27px;
+}
+#h5{
+  text-align: right;
+  color: gray;
+  line-height: 27px;
+}
+.intro{
+  text-indent: 24px;
+  line-height: 27px;
+  font-family: "Microsoft YaHei";
+  min-height: 300px;     /*为了美观：使得当内容比较少的时候，文字底部始终与左边菜单栏齐平*/
+}
+/*成功案例*/
+.cot{
+  min-height: 270px;
+}
+.tupian img{
+  width: 240px;
+  height: 210px;
+  border: 0.5px solid gray;
+  border-radius: 20px;
+}
+.tupian{
+  float: left;
+  margin: 20px;
+}
+.tp{
+  float: left;
+  width: 340px;
+  margin: 20px;
+}
+.tp p{
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  line-height: 20px;
+  padding: 10px;
+  color: gray;
+}
+/*解决方案*/
+.tupian1 img{
+  width: 390px;
+  height: 180px;
+}
+.tupian1{
+  width: 390px;
+  height: 200px;
+  margin: 0 auto;
+}
+.tp1{
+  text-align: center;
+  margin: 20px;
+}
+.tp1 p{
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  line-height: 20px;
+  padding: 10px;
+  color: gray;
+}
+#aboutus h3{
+  text-align: center;
+  line-height: 30px;
+}
+#aboutus h5{
+  color: gray;
+  line-height: 25px;
+}
+#aboutus p{
+  font-size: 15px;
+  font-family: "Microsoft YaHei";
+  line-height: 30px;
+  padding: 10px;
+}
