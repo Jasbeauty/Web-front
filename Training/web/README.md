@@ -136,4 +136,28 @@ window.onload = window.onresize = window.onscroll = function(){
 [参考案例](http://js.alixixi.com/a/2011071572504.shtml#)
 
 #### 分页符  
-[参考](http://www.html5tricks.com/tag/分页插件)
+[参考](http://www.html5tricks.com/tag/分页插件)  
+
+#### 留言页面布局及验证  
+* 设计表格   
+ * div + css  
+ * table  
+ `textarea` 不能设置宽度，只能通过 `行：rows="..." 列：cols="..."` 实现  
+* 基本验证非空  
+
+```ruby  
+function test(){
+  if(document.getElementById("username").value == "" || document.getElementById("username").value == NaN){
+    alert("username can't be empty!");
+    return false;
+  }
+  else {
+    return true;
+  }
+}  
+```  
+
+* （正则表达式）验证  
+[match(): 字符串匹配函数](http://www.w3school.com.cn/jsref/jsref_match.asp)  
+![confirm1](indeximg/confirm1.png)  
+![confirm2](indeximg/confirm2.png) 
