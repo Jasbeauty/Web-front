@@ -8,6 +8,7 @@
 * `span` 中的文字居中方法：    
  要想居中，首先得有宽度；  
  而span是inline，只给width是不起作用的；要想起作用，得先让span变成inline-block：  
+  
   ```ruby  
   span{
   display:inline-block;
@@ -85,11 +86,11 @@
 * [video标签](http://www.jianshu.com/p/404d01b8e713)  
 
 > * [video标签 属性](http://www.cnblogs.com/kiter/archive/2013/02/25/2932157.html)  
-* [目前支持三种格式](http://www.runoob.com/tags/tag-video.html)  
+* [目前支持的三种格式](http://www.runoob.com/tags/tag-video.html)  
 
 #### 在线咨询  
 * QQ链接代码  
-前提：必须装有QQ软件  
+前提：必须装有QQ客户端  
 
 ```ruby
 href="http://wpa.qq.com/msgrd?V=1&amp;uin=你的QQ号&amp;Site=www.maiziedu.com&amp;Menu=yes"
