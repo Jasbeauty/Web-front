@@ -160,4 +160,7 @@ function test(){
 * （正则表达式）验证  
 [match(): 字符串匹配函数](http://www.w3school.com.cn/jsref/jsref_match.asp)  
 ![confirm1](indeximg/confirm1.png)  
-![confirm2](indeximg/confirm2.png) 
+![confirm2](indeximg/confirm2.png)
+[知道这 20 个正则表达式，能让你少写 1,000 行代码](http://gold.xitu.io/entry/571807a88ac247005f117209/promote?utm_source=baidu&utm_medium=keyword&utm_content=regexp&utm_campaign=q3_search)  
+[正则表达式基本语法](http://www.cnblogs.com/light169/archive/2006/10/18/532347.html)  
+[正则表达式语法及常用的正则表达式](http://blog.csdn.net/gongth_12/article/details/8606814)
