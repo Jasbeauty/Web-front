@@ -43,11 +43,12 @@
 
 * jQuery  
 > 引用链接：[jQuery uncompressed version](https://code.jquery.com/jquery-3.0.0.js)  
-引用方式：
+从Microsoft直接引用（不用下载.js）：
   
             <head>  
-            <script src="//code.jquery.com/jquery-3.0.0.js"></script>  
-            ...  
+              <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+              </script>
+              ...  
             </head>
 
  * [廖雪峰的官方网站：JavaScript教程中jQuery](http://www.liaoxuefeng.com)
