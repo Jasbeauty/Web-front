@@ -1,6 +1,11 @@
 function $(id){
   return document.getElementById(id);
 }
+
+function getResult(){
+  showError();
+  
+}
 function add(num1,num2){
   return num1+num2;
 }
