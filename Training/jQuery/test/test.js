@@ -32,4 +32,18 @@ $(document).ready(function(){ //为了防止文档在完全加载（就绪）之
   $("#href").click(function(){
     $("#w3s").attr({"href":"http://www.w3school.com.cn/jquery/","title":"w3school jQuery"})
   })
+  $("#remove").click(function(){
+    $("p").remove(".italic");
+  })
+  $("#toggleClass").click(function(){
+    $("h1,h3,p").toggleClass("pink");   //注意pink前不加点
+  })
 })
+
+function afterText(){
+  var txt1 = "<b>I </b>";   // 以 HTML 创建元素
+  var txt2 = $("<i></i>").text("love ");  //通过 jQuery 创建元素
+  var txt3 = document.createElement("big");  //通过 DOM 创建元素
+  txt3.innerHTML = "jQuery !";   //通过 DOM 创建元素
+  $("img").after(txt1,txt2,txt3);
+}
