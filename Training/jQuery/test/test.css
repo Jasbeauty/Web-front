@@ -26,3 +26,11 @@ h2{
 .pink{
   color: pink;
 }
+#size{
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid gray;
+  background-color: pink;
+}
