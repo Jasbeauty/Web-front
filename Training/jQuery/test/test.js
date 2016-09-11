@@ -58,3 +58,22 @@ function afterText(){
   txt3.innerHTML = "jQuery !";   //通过 DOM 创建元素
   $("img").after(txt1,txt2,txt3);
 }
+
+//AJAX
+function loadXMLDoc(){
+  var xmlhttp;
+  if (window.XMLHttpRequest) {
+    //除IE6,IE5以外所有的浏览器都适用
+    xmlhttp = new XMLHttpRequest();
+  }
+  else {
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function(){
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      document.getElementById("ajax").innerHTML = xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","/ajax/demo_get.asp",true);
+  xmlhttp.send();
+}
