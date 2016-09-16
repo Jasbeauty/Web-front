@@ -1,0 +1,22 @@
+.motto{
+  position: relative;
+  margin-left: 30%;
+}
+.cover{
+  font-family: 'font';
+  font-size: 50px;
+  letter-spacing: 2px;
+  position: absolute;
+}
+#title{
+  font-family: 'font';
+  font-size: 100px;
+  color: orange;
+  text-align: center;
+}
+@font-face {
+  font-family: 'font';
+  src: url('font')format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
