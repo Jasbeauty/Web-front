@@ -1,5 +1,5 @@
 ### Cocos2d-x Introduction  
-> 游戏引擎相当于游戏的框架：   
+> 游戏引擎相当于游戏开发的框架：   
 * 界面编辑器（UI）   
 * 渲染系统（画面）
 * 人机交互系统（键盘控制动作）  
@@ -12,11 +12,13 @@
 * 引擎特点    
  * 开源  
  * 跨平台（基于OpenGL | ES图形库）  
- 
+
  > Cocos2d-x是基于c++的，该跨平台特性不同于java、flash（一次编译到处运行）；c++、c是一次编码到处编译的  
 
  * 多种开发语言  
  * 不再仅仅是2D  
 
 * 下载链接  
-[cocos官网](http://www.cocos.com) 
+[cocos官网](http://www.cocos.com)  
+* 安装教程
+[Cocos2d-x游戏开发初体验-C++篇](http://www.imooc.com/learn/400)
