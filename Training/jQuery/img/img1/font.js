@@ -1,0 +1,10 @@
+$(function(){
+  $(".motto").hover(function(){
+    $(this).find(".cover").animate({opacity:"0.7",height:"474px",top:"0px"},400,function(){
+      $(this).find("p").fadeIn(200);
+    });
+  },function(){
+    $(this).find("p").fadeOut(200);
+    $(this).find(".cover").animate({opacity:"0",height:"0px",top:"474px"},400);
+  });
+});
