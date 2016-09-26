@@ -201,13 +201,14 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(function(){
+        //必须将该语句移到点击事件的外面，否则每次点击cartNum都会被重置为0
+        var cartNum = 0;
         $(".addCar").on("click",function(){
           //找到图片位置
           var addImg = $(this).parent().parent(".product").find("img").eq(0);
           //克隆图片，并设定克隆图片的样式
           var cloneImg = addImg.clone();
           var shopCart = $(".shopCart");
-          var cartNum = 0;
 /*          cloneImg.css({
             "width":"250px",
             "height":"250px",
