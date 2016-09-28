@@ -50,12 +50,19 @@
         $.extend({
           tipsBox:function(options){
             options = $.extend({
+              //jq对象，要在那个html标签上显示
               obj:null,
+              //字符串，要显示的内容;也可以传一段html，如: "<b style='font-family:Microsoft YaHei;'>+1</b>"
               str:"+1",
+              //动画开始的文字大小
               startSize:"12px",
+              //动画结束的文字大小
               endSize:"30px",
+              //动画时间间隔
               interval:600,
+              //文字颜色
               color:"red",
+              //回调函数
               callback:function(){}
             },options);
             $("body").append("<span class='num'>" + options.str + "</span>");
