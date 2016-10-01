@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>点赞（＋1 ／ －1）</title>
+    <style media="screen">
+      h2{
+        text-align: center;
+      }
+      .div1{
+        width: 640px;
+        margin: 0 auto;
+        border: 1px solid #eee;
+        border-radius: 10px;
+      }
+      .content{
+        text-align: left;
+        border: 1px solid #eee;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 37px;
+      }
+      .content p{
+        font-size: 17px;
+        font-family: "Microsoft YaHei";
+      }
+      .zan,.zan1{
+        float: right;
+        margin: 17px;
+      }
+      span{
+        font-size: 27px;
+        font-family: "Microsoft YaHei";
+        cursor: pointer;
+      }
+      .zan:before,.zan1:before{
+        content: " ";
+        border-radius: 30px 30px 0 0;
+        background: gray;
+        width: 20px;
+        height: 30px;
+        -moz-transform: rotate(-48deg);
+        -ms-transform: rotate(-48deg);
+        -o-transform: rotate(-48deg);
+        -webkit-transform: rotate(-48deg);
+        position: absolute;
+        left: 830px;
+      }
+      .zan:after,.zan1:after{
+        content: " ";
+        border-radius: 30px 30px 0 0;
+        background: gray;
+        width: 20px;
+        height: 30px;
+        -moz-transform: rotate(48deg);
+        -ms-transform: rotate(48deg);
+        -o-transform: rotate(48deg);
+        -webkit-transform: rotate(48deg);
+        position: absolute;
+        left: 838px;
+      }
+      .zan1:before,.zan1:after{
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>练习：点赞效果实现——点击♥后边的数量+1，再次点击♥后边的数量-1</h2>
+    <div class="div1">
+      <div class="content">
+        <h3>梅 兰 竹 菊</h3>
+        <p>
+          梅：探波傲雪，剪雪裁冰，一身傲骨，是为高洁志士
+        </p>
+        <p>
+          兰：空谷幽放，孤芳自赏，香雅怡情，是为世上贤达
+        </p>
+        <p>
+          竹：筛风弄月，潇洒一生，清雅澹泊，是为谦谦君子
+        </p>
+        <p>
+          菊：凌霜飘逸，特立独行，不趋炎势，是为世外隐士
+        </p>
+        <div class="zan">
+          <span>7</span>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script type="text/javascript">
+    $(".zan").click(function(){
+      $(this).toggleClass("zan1");
+      var classname = $(this).attr("class");
+      var zan_num = parseInt($('>span',this).text());
+      if (classname == "zan zan1") {
+        zan_num +=1;
+        $(">span",this).text(zan_num);
+      }else if (classname == "zan") {
+        zan_num -=1;
+        $('>span',this).text(zan_num);
+      }
+    });
+    </script>
+  </body>
+</html>
