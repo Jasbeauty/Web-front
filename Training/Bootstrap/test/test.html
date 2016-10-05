@@ -656,10 +656,256 @@
             <textarea class="form-control" rows="3"></textarea>
           </div>
         </form>
+        <p>
+          复选框（Checkbox）和单选框（Radio）
+        </p>
+        <label for="name">默认实例</label>
+        <div class="checkbox">
+          <label><input type="checkbox" name="name" value="">choice 1</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="name" value="">choice 2</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="name" value="">choice 1</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="name" value="">choice 2</label>
+        </div>
+        <label for="name">内联实例</label>
+        <div class="">
+          <label class="checkbox-inline"><input type="checkbox" name="name" value="">choice 1</label>
+          <label class="checkbox-inline"><input type="checkbox" name="name" value="">choice 2</label>
+          <label class="radio-inline"><input type="radio" name="name" value="">choice 1</label>
+          <label class="radio-inline"><input type="radio" name="name" value="">choice 1</label>
+        </div>
+        <p>
+          选择框（Select）
+        </p>
+        <form role="form">
+          <div class="form-group">
+            <label for="name">选择列表</label>
+            <select class="form-control" name="">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <label for="name">可多选的选择列表</label>
+            <select multiple class="form-control" name="">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+        </form>
+        <p>
+          静态控件(在 &lt;p&gt; 上使用 class .form-control-static)
+        </p>
+        <form class="form-horizontal"  role="form" action="index.html" method="post">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <p class="form-control-static">
+                email@example.com
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" placeholder="Please input the password" name="name" value="">
+            </div>
+          </div>
+        </form>
+        <p>
+          表单控件状态
+        </p>
+        <form class="form-horizontal" role="form" action="index.html" method="post">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">聚焦</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="name" value="请输入获得焦点。。。">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">禁用</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="禁止输入。。。" disabled name="name" value="">
+            </div>
+          </div>
+          <fieldset disabled>
+            <div class="form-group">
+              <label for="disabledTextInput" class="col-sm-2 control-label">禁用输入（Fieldset disabled）</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="禁止输入" name="name" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="disabledSelect" class="col-sm-2 control-label">禁用选择菜单（Fieldset disabled）</label>
+              <div class="col-sm-10">
+                <select class="col-sm-10" class="form-control" name="">
+                  <option>禁止选择</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group has-success">
+            <label for="inputSuccess" class="col-sm-2 control-label">输入成功</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="name" value="">
+            </div>
+          </div>
+          <div class="form-group has-warning">
+            <label for="inputWarning" class="col-sm-2 control-label">输入警告</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="name" value="">
+            </div>
+          </div>
+          <div class="form-group has-error">
+            <label for="inputError" class="col-sm-2 control-label">输入错误</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="name" value="">
+            </div>
+          </div>
+        </form>
+        <p>
+          表单控件大小 <br>
+          <small>可以分别使用类 .input-lg .input-sm 来设置表单的高度和宽度: </small>
+          <pre>
+            &lt;div class="row"&gt;
+              &lt;div class="col-lg-2"&gt;
+                &lt;input type="text" class="form-control" placeholder=".col-lg-2"&gt;
+              &lt;/div&gt;
+              &lt;div class="col-lg-3"&gt;
+                &lt;input type="text" class="form-control" placeholder=".col-lg-3"&gt;
+              &lt;/div&gt;
+              &lt;div class="col-lg-4"&gt;
+                &lt;input type="text" class="form-control" placeholder=".col-lg-4"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+        </p>
+        <p>
+          表单帮助文本 <br>
+          <small>Bootstrap 表单控件可以在输入框 input 上有一个块级帮助文本。为了添加一个占用整个宽度的内容块，请在 <code>input</code> 后使用 .help-block</small>
+        </p>
+      </div>
+      <h3>* 按钮</h3>
+      <div class="">
+        <p>
+           .btn 类是按钮的基本样式
+        </p>
+        <button type="button" class="btn" name="button">基本按钮</button>
+        <p>
+          .btn-default 类是默认/标准按钮样式
+        </p>
+        <button type="button" class="btn btn-default" name="button">基本按钮</button>
+        <p>
+           .btn-primary 类可表示为原始按钮样式（未被操作）
+        </p>
+        <button type="button" class="btn btn-primary" name="button">原始按钮</button>
+        <p>
+          .btn-success 表示操作成功后的按钮样式
+        </p>
+        <button type="button" class="btn btn-success"name="button">成功按钮</button>
+        <p>
+          .btn-info 类表示点击按钮后会弹出提示信息
+        </p>
+        <button type="button" class="btn btn-info" name="button">信息按钮</button>
+        <p>
+          .btn-warning  该样式表示需要谨慎操作的按钮
+        </p>
+        <button type="button" class="btn btn-warning" name="button">警告按钮</button>
+        <p>
+          .btn-danger 表示一个危险动作的按钮
+        </p>
+        <button type="button" class="btn btn-danger" name="button">危险按钮</button>
+        <p>
+          .btn-link 类让按钮看起来像个链接（仍然保持按钮的行为）
+        </p>
+        <button type="button" class="btn btn-link" name="button">链接按钮</button>
+        <p>
+          .btn-lg 类制作大按钮，.btn-sm 制作一个小按钮，.btn-xs 制作一个超小按钮
+        </p>
+        <button type="button" class="btn btn-lg"name="button">大按钮</button>
+        <button type="button" class="btn btn-sm"name="button">小按钮</button>
+        <button type="button" class="btn btn-xs"name="button">超小按钮</button>
+        <p>
+          .btn-block 类制作一个块级按钮(拉伸至父元素100%的宽度)
+        </p>
+        <button type="button" class="btn btn-block"name="button">块级按钮</button>
+        <p>
+           .active 类表示按钮被点击
+        </p>
+        <button type="button" class="btn btn-default active" name="button">点击激活的默认按钮</button>
+        <p>
+           disabled 属性可制作一个禁用的按钮
+        </p>
+        <button type="button" class="btn btn-default" disabled="disabled" name="button">禁用的默认按钮</button>
+        <p>
+           .disabled 类使得链接不可用 <br>
+           <blockquote cite="http://">
+             添加 disabled class 到 &lt;a&gt; 按钮。注意：该 class 只会改变 &lt;a&gt; 的外观，不会改变它的功能。在这里，您需要使用自定义的 JavaScript 来禁用链接。
+           </blockquote>
+        </p>
+        <a href="#" class="btn btn-info disabled" role="button">禁用的信息链接</a>
+        <p>
+          您可以在 <code>a</code>、 <code>button</code> 或  <code>input</code> 元素上使用‘按钮class’。但是建议您在  <code>button</code>元素上使用‘按钮 class’，避免跨浏览器的不一致性问题
+        </p>
+      </div>
+      <h3>* 图片</h3>
+      <div class="">
+        <img src="../img/1.jpg" class="img-rounded" width="280px" height="355.5px" alt="" />
+        <img src="../img/1.jpg" class="img-circle" width="280px" height="355.5px" alt="" />
+        <img src="../img/1.jpg" class="img-thumbnail" width="280px" height="355.5px" alt="" />
+        <img src="../img/1.jpg" class="img-responsive" width="280px" height="355.5px" alt="" />
+        <p>.img-responsive 类将 max-width: 100%; 和 height: auto; 样式应用在图片上,图片将很好地扩展到父元素</p>
+      </div>
+      <h3>* 辅助类</h3>
+      <div class="">
+        <p>
+          <code>&lt;a&gt;</code> , <code>&lt;p&gt;</code>文本(.text-muted .text-primary .text-success .text-info .text-warning .text-danger .bg-primary .bg-success .bg-info .bg-warning .bg-danger)
+        </p>
+        <a href="#" class="text-muted">链接使用了样式 "text-muted"</a><br>
+        <a href="#" class="bg-info">链接使用了样式 "bg-info"</a>
+        <img src="../img/2.png" class="img-responsive" width="426" height="308.4" alt="" />
+        <p>
+           .close 类可以显示一个关闭按钮
+           <button type="button" class="close" aria-hidden="true" name="button">&times;</button>
+        </p>
+        <p>
+           .caret 类显示了一个下拉的功能:  <span class="caret"></span>
+        </p>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" name="button">Menu <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">链接 1</a></li>
+            <li><a href="#">链接 2</a></li>
+            <li><a href="#">链接 3</a></li>
+          </ul>
+        </div>
+        <div class="clearfix" style="background: gray;border: 1px solid black;">
+          <div class="pull-left" style="background: orange;">
+            向左快速浮动
+          </div>
+          <div class="pull-right" style="background: pink;">
+            向右快速浮动
+          </div>
+        </div>
+      </div>
+      <h3>字体图标(Glyphicons)</h3>
+      <div class="">
+        <div class="">
+          <p>
+            <a href="http://www.runoob.com/try/demo_source/bootstrap3-glyph-icons.htm">glyphicon icons</a>
+          </p>
+          <button type="button" class="btn btn-default" name="button"><span class="glyphicon glyphicon-headphones"></span></button>
+          <button type="button" class="btn btn-default btn-lg" name="button"><span class="glyphicon glyphicon-time"></span></button>
+        </div>
       </div>
     </div>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-    <script src="../dist/js/bootstrap.min.js" charset="utf-8"></script>
 
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js" charset="utf-8"></script>
   </body>
 </html>
