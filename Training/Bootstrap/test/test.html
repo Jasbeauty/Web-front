@@ -1438,9 +1438,21 @@
           </ul>
         </blockquote>
       </div>
+      <h3>* 下拉菜单（Dropdown）插件</h3>
+      <div class="">
+
+      </div>
+      <h3>* 滚动监听（Scrollspy）插件</h3>
     </div>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="../dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('#myModal').on('hide.bs.modal',function(){
+          alert('hi,u just close the window ~');
+        });
+      });
+    </script>
   </body>
 </html>
