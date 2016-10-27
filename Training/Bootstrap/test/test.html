@@ -1109,7 +1109,7 @@
           <p>
             .tab-content 、 .tab-pane 和 data-toggle="tab" (或者data-toggle="pill")一同使用, 设置标签页对应的内容随标签的切换而更改 <span class="caret"></span>
           </p>
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs" id="mytab">
             <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
             <li><a data-toggle="tab" href="#ios">ios</a></li>
             <li><a data-toggle="tab" href="#android">android</a></li>
@@ -1505,15 +1505,15 @@
         <span id="activeitem" style="color:red;"></span>
       </div>
       <h4>* 垂直滚动监听</h4>
-       <div class="">
-         <blockquote cite="">
-           <a href="http://www.runoob.com/try/try.php?filename=trybs_scrollspy2&basepath=0" target="_blank">详见 如何创建垂直滚动监听</a>
-         </blockquote>
+      <blockquote cite="">
+        <a href="http://www.runoob.com/try/try.php?filename=trybs_scrollspy2&basepath=0" target="_blank">详见 如何创建垂直滚动监听</a>
+      </blockquote>
+       <!--<div class="">
          <div class="row">
            <nav class="col-sm-3" id="myscrollspy">
              <div class="container-fluid">
                <div class="container-fluid">
-                 <ul class="nav nav-pills nav-stacked" style="position:fixed;">
+                 <ul class="nav nav-pills nav-stacked" style="">
                    <li><a href="#section1">Section1</a></li>
                    <li><a href="#section2">Section2</a></li>
                    <li><a href="#section3">Section3</a></li>
@@ -1528,32 +1528,32 @@
                </div>
              </div>
            </nav>
-           <div class="col-sm-9"  data-spy="scroll" data-target="#myscrollspy" data-offset="20"  style="height:250px;font-size:20px;">
-             <div class="" id="section1">
+           <div class="col-sm-9"  data-spy="scroll" data-target="#myscrollspy" data-offset="20"  style="height:250px;font-size:12px;">
+             <div class="" id="section1" style="background-color:#1e88e5;">
                <h1>Section1</h1>
                <p>
                  Try to scroll this section and look at the navigation list while scrolling!
                </p>
              </div>
-             <div class="" id="section2">
+             <div class="" id="section2" style="backgroud-color:#673ab7;">
                <h1>Section2</h1>
                <p>
                  Try to scroll this section and look at the navigation list while scrolling!
                </p>
              </div>
-             <div class="" id="section3">
+             <div class="" id="section3" style="background-color:#ff9800;">
                <h1>Section3</h1>
                <p>
                  Try to scroll this section and look at the navigation list while scrolling!
                </p>
              </div>
-             <div class="" id="section41">
+             <div class="" id="section41" style="background-color:#00bcd4;">
                <h1>Section4-1</h1>
                <p>
                  Try to scroll this section and look at the navigation list while scrolling!
                </p>
              </div>
-             <div class="" id="section42">
+             <div class="" id="section42" style="back-ground-color:#009688;">
                <h1>Section4-2</h1>
                <p>
                  Try to scroll this section and look at the navigation list while scrolling!
@@ -1561,7 +1561,40 @@
              </div>
            </div>
          </div>
-       </div>
+       </div>-->
+      <h3>* 标签页（Tab）插件</h3>
+      <div class="">
+        <p class="active-tab">
+          <strong>激活的标签页</strong>:<span></span>
+        </p>
+        <p class="previous-tab">
+          <strong>前一个激活的标签页</strong>:<span></span>
+        </p>
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#ios">ios</a></li>
+          <li><a data-toggle="tab" href="#android">android</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="home">
+            <h5>首页</h5>
+          </div>
+          <div class="tab-pane fade" id="ios">
+            <h5>苹果系统</h5>
+          </div>
+          <div class="tab-pane fade" id="android">
+            <h5>安卓系统</h5>
+          </div>
+        </div>
+      </div>
+      <h3>* 提示工具（Tooltip）插件</h3>
+      <div class="">
+        这是一个<a href="#" data-toggle="tooltip" title="默认的Tooltip" class="tooltip-toggle">默认的Tooltip</a>
+        <p class="tooltip-options">
+          这是一个<a href="#" data-toggle="tooltip" title="<h4>'am header4</h4>'">Tooltip 方法 options</a>
+        </p>
+        <button type="button" name="button" data-toggle="tooltip" class="btn btn-default" title="右侧的Tooltip" data-placement="right">右侧的Tooltip</button>
+      </div>
     </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="../dist/js/bootstrap.min.js" charset="utf-8"></script>
@@ -1584,6 +1617,26 @@
           $("#activeitem").html("目前你正在查看 - " + currentItem);
         });
       });
+      $(function(){
+        $('#myTab li:eq(1) a').tab('show');
+      });
+      $(function(){
+        $('a[data-toggle="tab"]').on('shown.bs.tab',function(e){
+          var activeTab = $(e.target).text();
+          var previousTab = $(e.relatedTarget).text();
+          $(".active-tab span").html(activeTab);
+          $(".previous-tab span").html(previousTab);
+        });
+      });
+      $(function(){
+        $(".tooltip-toggle").tooltip('toggle');
+      });
+      $(function(){
+        $(".tooltip-options a").tooltip({html:true});
+      });
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      })
     </script>
 
   </body>
