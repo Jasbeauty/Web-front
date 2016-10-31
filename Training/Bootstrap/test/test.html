@@ -1589,11 +1589,49 @@
       </div>
       <h3>* 提示工具（Tooltip）插件</h3>
       <div class="">
-        这是一个<a href="#" data-toggle="tooltip" title="默认的Tooltip" class="tooltip-toggle">默认的Tooltip</a>
+        这是一个<a href="#" data-toggle="tooltip" title="默认的Tooltip" class="tooltip-show">默认的Tooltip</a>
         <p class="tooltip-options">
           这是一个<a href="#" data-toggle="tooltip" title="<h4>'am header4</h4>'">Tooltip 方法 options</a>
         </p>
         <button type="button" name="button" data-toggle="tooltip" class="btn btn-default" title="右侧的Tooltip" data-placement="right">右侧的Tooltip</button>
+      </div>
+      <h3>* 弹出框（Popover）插件</h3>
+      <div class="">
+        <button type="button" name="button" class="btn btn-success" title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="底部的Popover中的一些内容">底部的Popover</button>
+        <p>
+          其余功能类似于tooltip
+        </p>
+      </div>
+      <h3>* 警告框（Alert）插件</h3>
+      <div class="">
+        <div class="alert alert-warning" id="myAlert">
+          <a href="#" class="close" data-dismiss="alert">&times;</a>
+          <strong>Warning!</strong>Your internet connect has some problems.
+        </div>
+        <p>
+          注意 $('#identifier').alert(); 与 $('#identifier').alert('close') 的区别;
+        </p>
+      </div>
+      <h3>* 按钮（Button）插件</h3>
+      <div class="">
+        <button type="button" name="button" id="fat-btn" class="btn btn-primary" data-loading-text="Loading...">加载状态</button>
+        <h4>演示 .button(string) 方法    <strong>PS: 未实现相应功能！</strong></h4>
+        <button type="button" name="button" id="myButton" class="btn btn-primary" data-complete-text="Loading finished">请点击我</button>
+      </div>
+      <h3>* 折叠（Collapse）插件</h3>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#collapseone" data-toggle="collapse" data-parent="#accordion">点击我进行展开，再次点击我进行折叠 --toggle 方法</a>
+          </h4>
+        </div>
+        <div class="panel-collapse collapse" id="collapseone">
+          <div class="panel-body">
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                lomo.
+          </div>
+        </div>
       </div>
     </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
@@ -1629,14 +1667,36 @@
         });
       });
       $(function(){
-        $(".tooltip-toggle").tooltip('toggle');
+        $(".tooltip-show").tooltip('show');
+      });
+      $(function(){
+        $(".tooltip-show").on('show.bs.tooltip',function(){
+          alert("alert message on show");
+        });
       });
       $(function(){
         $(".tooltip-options a").tooltip({html:true});
       });
       $(function(){
         $('[data-toggle="tooltip"]').tooltip();
-      })
+      });
+      $(function(){
+        $("#myAlert").bind('closed.bs.alert',function(){
+          alert("警告消息框被关闭");
+        });
+      });
+      $(function(){
+        $(".btn").click(function(){
+          $(this).button('loading').delay(1000).queue(function(){})
+        });
+      });
+      $(function(){
+        $("#myButton").click(function(){
+          $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('string');
+          });
+        });
+      });
     </script>
 
   </body>
