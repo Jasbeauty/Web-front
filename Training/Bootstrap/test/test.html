@@ -1633,6 +1633,32 @@
           </div>
         </div>
       </div>
+      <h3>* 轮播（Carousel）插件</h3>
+      <div class="carousel slide" id="myCarousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="../img/4.jpg" alt="" width="500px" height="300px"/>
+          </div>
+          <div class="item">
+            <img src="../img/5.jpg" alt="" width="500px" height="300px"/>
+          </div>
+          <div class="item">
+            <img src="../img/6.jpg" alt="" width="500px" height="300px"/>
+          </div>
+          <div class="item">
+            <img src="../img/7.jpg" alt="" width="500px" height="300px"/>
+          </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+        <a href="#myCarousel" class="carousel-control right" data-slide="next">&lsaquo;</a>
+      </div>
+      <h3>* 附加导航（Affix）插件</h3>
     </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="../dist/js/bootstrap.min.js" charset="utf-8"></script>
@@ -1695,6 +1721,11 @@
           $(this).button('loading').delay(1000).queue(function(){
             $(this).button('string');
           });
+        });
+      });
+      $(function(){
+        $('#collapseone').on('show.bs.collapse',function(){
+          alert('嘿，当您展开时会提示本警告');
         });
       });
     </script>
